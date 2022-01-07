@@ -1,22 +1,9 @@
 
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
 
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local TextBox = Instance.new("TextBox")
 local Command = TextBox
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
 local CommandBar = Instance.new("ScreenGui")
 local CMDFRAME = Instance.new("Frame")
 local ScrollingBarCmd = Instance.new("ScrollingFrame")
@@ -25,18 +12,9 @@ local UIListLayout = Instance.new("UIListLayout")
 local Sttting = Instance.new("TextLabel")
 local CloseCmd = Instance.new("TextButton")
 local Cmddframe22 = Instance.new("Frame")
-
---Properties:
-
 CommandBar.Name = "Command Bar"
 CommandBar.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 CommandBar.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
-
-
---Properties:
-
-
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 CMDFRAME.Name = "CMDFRAME"
@@ -49,7 +27,6 @@ CMDFRAME.Size = UDim2.new(0, 330, 0, 422)
 CMDFRAME.Active = true 
 CMDFRAME.Draggable = true
 CMDFRAME.Visible = false
-
 ScrollingBarCmd.Name = "ScrollingBarCmd"
 ScrollingBarCmd.Parent = CMDFRAME
 ScrollingBarCmd.Active = true
@@ -59,12 +36,8 @@ ScrollingBarCmd.BorderColor3 = Color3.fromRGB(255, 255, 255)
 ScrollingBarCmd.Position = UDim2.new(0, 0, 0.0853080601, 0)
 ScrollingBarCmd.Size = UDim2.new(0, 330, 0, 386)
 ScrollingBarCmd.CanvasSize = UDim2.new(0, 0, 0, 0)
-
-
-
 UIListLayout.Parent = ScrollingBarCmd
 UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
-
 Sttting.Name = "Sttting"
 Sttting.Parent = CMDFRAME
 Sttting.BackgroundColor3 = Color3.fromRGB(63, 67, 72)
@@ -76,7 +49,6 @@ Sttting.Font = Enum.Font.GothamSemibold
 Sttting.Text = "Command Bar - Command X"
 Sttting.TextColor3 = Color3.fromRGB(255, 255, 255)
 Sttting.TextSize = 14.000
-
 CloseCmd.Name = "CloseCmd"
 CloseCmd.Parent = CMDFRAME
 CloseCmd.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
