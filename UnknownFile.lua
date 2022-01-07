@@ -130,3 +130,19 @@ game:GetService("UserInputService").InputBegan:Connect(
     end
 )
 
+
+
+
+--
+TextBox.FocusLost:Connect(function(enter)
+
+--- Textbox Functions
+if  Command["Text"]:lower():sub(1,8)  == ("Commands") or Command["Text"]:lower():sub(1,4)  == ("Cmds") then 
+CMDFRAME.Visible = true
+elseif
+Command["Text"]:lower():sub(1,6) == ("rejoin") or Command["Text"]:lower():sub(1,2) == ("rj") then -- Type this into the cmdbar and it works tadaaaaaa
+    game:GetService("TeleportService"):Teleport(game.PlaceId)
+end
+end)
+AddHelp("Commands / Cmds", "Show Command Bar") -- This Adds Words to the cmd bar
+AddHelp("Rejoin / Rj","Rejoins your server")
