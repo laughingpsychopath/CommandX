@@ -133,8 +133,8 @@ game:GetService("UserInputService").InputBegan:Connect(
 
 
 
---
-TextBox.FocusLost:Connect(function(enter)
+-- This the information and examples
+--[[TextBox.FocusLost:Connect(function(enter)
 
 --- Textbox Functions
 if  Command["Text"]:lower():sub(1,8)  == ("Commands") or Command["Text"]:lower():sub(1,4)  == ("Cmds") then 
@@ -145,4 +145,5 @@ Command["Text"]:lower():sub(1,6) == ("rejoin") or Command["Text"]:lower():sub(1,
 end
 end)
 AddHelp("Commands / Cmds", "Show Command Bar") -- This Adds Words to the cmd bar
-AddHelp("Rejoin / Rj","Rejoins your server")
+AddHelp("Rejoin / Rj","Rejoins your server")]]
+
